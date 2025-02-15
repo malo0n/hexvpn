@@ -83,19 +83,19 @@ export default function App() {
             subTitle="Постоянно расширяем <br/> возможности"
           >
             <Card
-              className="p-[37px] text-center text-subtitle2 cursor-default"
+              className="!p-[37px] text-center text-subtitle2 cursor-default"
               color="light"
             >
               Турция
             </Card>
             <Card
-              className="p-[37px] text-center text-subtitle2 cursor-default"
+              className="!p-[37px] text-center text-subtitle2 cursor-default"
               color="light"
             >
               Нидерланды
             </Card>
             <Card
-              className="p-[37px] text-center text-subtitle2 cursor-default"
+              className="!p-[37px] text-center text-subtitle2 cursor-default"
               color="light"
             >
               Германия
