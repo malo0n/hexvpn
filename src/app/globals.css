@@ -42,6 +42,5 @@ body {
   transition: all;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  overscroll-behavior: none;
   color: var(--primary);
 }
