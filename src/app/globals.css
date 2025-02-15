@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #E2E2E2;
+  --primary: #0E161E;
+  --secondary: #162431;
+  --accent: #FF7061;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@font-face {
+  font-family: "Evolventa";
+  src: url("/Evolventa-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Evolventa";
+  src: url("/Evolventa-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Evolventa", sans-serif;
+  transition: all;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overscroll-behavior: none;
+  color: var(--primary);
+}
