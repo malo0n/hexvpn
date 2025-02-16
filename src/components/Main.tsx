@@ -14,7 +14,7 @@ export const Main = () => {
         <Image src={"/androidIcon.svg"} width={53} height={30} className="h-fit" alt={"android"}/>
       </div>
 
-      <Image src={"/hexFigure.svg"} width={1000} height={720} alt={"hexFigure"} priority className="absolute -right-[240px] top-[120px] -z-40"></Image>
+      <Image src={"/hexFigure.svg"} width={1000} height={720} alt={"hexFigure"} priority className="absolute -right-[240px] top-[120px]"></Image>
       
     </div>
   )
