@@ -79,7 +79,7 @@ export default function App() {
 
           <Section
             id="servers"
-            title="Сервера по всему миру"
+            title="Серверы по всему миру"
             subTitle="Постоянно расширяем <br/> возможности"
           >
             <Card

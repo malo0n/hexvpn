@@ -8,7 +8,7 @@ export const Header = () => {
       </a>
       <div className="flex gap-[46px] text-subtitle2">
         <a href="#subPlan" className="hover:opacity-65 transition-all">Тарифы</a>
-        <a href="#servers" className="hover:opacity-65 transition-all">Сервера</a>
+        <a href="#servers" className="hover:opacity-65 transition-all">Серверы</a>
         <a href="#about" className="hover:opacity-65 transition-all">О нас</a>
       </div>
     </header>
