@@ -131,7 +131,7 @@ export default function App() {
               width={1000}
               height={720}
               alt={"hexFigure"}
-              className="absolute -left-[50%] -top-[120px] -z-40"
+              className="absolute -left-[50%] -top-[120px] -z-40 w-auto"
             ></Image>
           </Section>
 

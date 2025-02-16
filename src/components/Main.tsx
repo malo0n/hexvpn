@@ -9,13 +9,12 @@ export const Main = () => {
         Без рекламы.</p>
       </div>
       <div className="flex gap-8 items-end">
-        <Image src={"/windowsIcon.svg"} width={43} height={43} className="h-fit" alt={"windows"}/>
-        <Image src={"/appleIcon.png"} width={37} height={45} className="h-fit" alt={"apple"}/>
-        <Image src={"/androidIcon.svg"} width={53} height={30} className="h-fit" alt={"android"}/>
+        <Image src={"/windowsIcon.svg"} width={43} height={43} className="h-auto" alt={"windows"}/>
+        <Image src={"/appleIcon.png"} width={37} height={45} className="h-auto" alt={"apple"}/>
+        <Image src={"/androidIcon.svg"} width={53} height={30} className="h-auto" alt={"android"}/>
       </div>
 
-      <Image src={"/hexFigure.svg"} width={1000} height={720} alt={"hexFigure"} priority className="absolute -right-[240px] top-[120px]"></Image>
-      
+      <Image src={"/hexFigure.svg"} width={1000} height={720} alt={"hexFigure"} priority className="absolute -right-[240px] top-[120px] w-auto"></Image>
     </div>
   )
 }
