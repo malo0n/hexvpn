@@ -8,7 +8,7 @@ interface Props {
 export const Section = (props: Props) => {
   const { title, subTitle, children, id } = props;
   return (
-    <div id={id} className="-z-0 relative flex scroll-m-[100px] flex-col gap-[44px] items-center">
+    <div id={id} className=" relative mx-[114px] flex scroll-m-[100px] flex-col gap-[44px] items-center">
       <div className="flex flex-col gap-4 text-center">
         <p className="text-titleH2">{title}</p>
         <p className="text-mainText" dangerouslySetInnerHTML={{ __html: subTitle }}></p>

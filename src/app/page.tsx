@@ -11,9 +11,9 @@ export default function App() {
   return (
     <div className="flex flex-col w-full">
       <Header />
-      <div className="min-h-[100vh] px-[114px] py-[149px] flex flex-col gap-[205px]">
+      <div className="min-h-[100vh] flex flex-col gap-[205px]">
         <Main />
-        <div className="flex flex-col gap-[140px]">
+        <div className="flex flex-col gap-[140px] py-[149px]">
           <Section
             id="subPlan"
             title="Тарифы и планы"
@@ -126,12 +126,12 @@ export default function App() {
             </Card>
 
             <Image
-              src={"/hexFigure.svg"}
+              src={"/hexFigure2.svg"}
               priority
-              width={1000}
+              width={800}
               height={720}
               alt={"hexFigure"}
-              className="absolute -left-[50%] -top-[120px] -z-40 w-auto"
+              className="absolute -left-[114px] -top-[120px] -z-10 w-[30vw]"
             ></Image>
           </Section>
 
