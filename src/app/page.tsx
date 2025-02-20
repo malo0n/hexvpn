@@ -83,19 +83,19 @@ export default function App() {
             subTitle="Постоянно расширяем <br/> возможности"
           >
             <Card
-              className="!p-[37px] text-center text-subtitle2 cursor-default"
+              className="p-[37px]! text-center text-subtitle2 cursor-default"
               color="light"
             >
               Турция
             </Card>
             <Card
-              className="!p-[37px] text-center text-subtitle2 cursor-default"
+              className="p-[37px]! text-center text-subtitle2 cursor-default"
               color="light"
             >
               Нидерланды
             </Card>
             <Card
-              className="!p-[37px] text-center text-subtitle2 cursor-default"
+              className="p-[37px]! text-center text-subtitle2 cursor-default"
               color="light"
             >
               Германия
@@ -116,7 +116,7 @@ export default function App() {
                 </p>
               </div>
             </Card>
-            <Card color="light" className="!h-[276px] self-start">
+            <Card color="light" className="h-[276px]! self-start">
               <div className="flex flex-col gap-7 h-full">
                 <p className="text-subtitle1">Анонимность</p>
                 <p className="text-subtitle2">
