@@ -1,16 +1,22 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export const Header = () => {
   return (
-    <header className="h-[82px] bg-background sticky top-0 flex justify-between z-50 px-[114px] border-b-[1px] border-[#BABCBF] items-center">
-      <a href="#top">
-        <Image src={"/logo.svg"} priority alt="logo" className="w-auto" width={125} height={33}></Image>
+    <header className='sticky top-0 z-50 flex h-[82px] items-center justify-between border-b-[1px] border-[#BABCBF] bg-background px-[114px]'>
+      <a href='#top'>
+        <Image src={"/logo.svg"} priority alt='logo' className='w-auto' width={125} height={33}></Image>
       </a>
-      <div className="flex gap-[46px] text-subtitle2">
-        <a href="#subPlan" className="hover:opacity-65 transition-all">Тарифы</a>
-        <a href="#servers" className="hover:opacity-65 transition-all">Серверы</a>
-        <a href="#about" className="hover:opacity-65 transition-all">О нас</a>
+      <div className='flex gap-[46px] text-subtitle2'>
+        <a href='#subPlan' className='transition-all hover:opacity-65'>
+          Тарифы
+        </a>
+        <a href='#servers' className='transition-all hover:opacity-65'>
+          Серверы
+        </a>
+        <a href='#about' className='transition-all hover:opacity-65'>
+          О нас
+        </a>
       </div>
     </header>
-  )
-}
+  );
+};
