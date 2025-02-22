@@ -1,10 +1,10 @@
 import HexAnimation2 from "@/components/hexFigure2";
 import { Main } from "@/components/Main";
-import { basicPlan, PlanCard, premiumPlan, trialPlan } from "@/components/PlanCard";
+import { PlanCard } from "@/components/PlanCard";
 import { Section } from "@/components/Section";
 import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { servers } from "@/model/const";
+import { basicPlan, premiumPlan, servers, trialPlan } from "@/model/const";
 import Link from "next/link";
 
 export default function App() {

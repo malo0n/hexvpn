@@ -1,3 +1,5 @@
+import { PlanCardProps } from "@/components/PlanCard";
+
 export const servers = ["Турция", "Нидерланды", "Германия"];
 
 export const hexagons = [
@@ -187,3 +189,24 @@ export const hexagons2 = [
     stroke: "#4E5359",
   },
 ];
+
+export const basicPlan: PlanCardProps = {
+  title: "Базовый",
+  price: "от 56 руб/мес",
+  features: ["Не более 3 устройств", "Скорость до 1 Гбит/с"],
+  variant: "background",
+};
+
+export const trialPlan: PlanCardProps = {
+  title: "Пробный период",
+  price: "0 руб/мес",
+  features: ["7 дней пробного периода", "Не более 3 устройств", "Скорость до 1 Гбит/с"],
+  variant: "accent",
+};
+
+export const premiumPlan: PlanCardProps = {
+  title: "Премиум",
+  price: "от 100 руб/мес",
+  features: ["Не более 10 устройств", "Скорость до 10 Гбит/с", "Приоритетная работа техподдержки"],
+  variant: "background",
+};

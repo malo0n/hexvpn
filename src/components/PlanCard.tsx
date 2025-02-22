@@ -1,37 +1,16 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
-import { Mark } from "./ui/mark";
+import { Mark } from "./ui/Mark";
 
-export const basicPlan: Props = {
-  title: "Базовый",
-  price: "от 56 руб/мес",
-  features: ["Не более 3 устройств", "Скорость до 1 Гбит/с"],
-  variant: "background",
-};
-
-export const trialPlan: Props = {
-  title: "Пробный период",
-  price: "0 руб/мес",
-  features: ["7 дней пробного периода", "Не более 3 устройств", "Скорость до 1 Гбит/с"],
-  variant: "accent",
-};
-
-export const premiumPlan: Props = {
-  title: "Премиум",
-  price: "от 100 руб/мес",
-  features: ["Не более 10 устройств", "Скорость до 10 Гбит/с", "Приоритетная работа техподдержки"],
-  variant: "background",
-};
-
-interface Props {
+export interface PlanCardProps {
   title: string;
   price: string;
   features: string[];
   variant: "background" | "accent";
 }
 
-export const PlanCard = (props: Props) => {
+export const PlanCard = (props: PlanCardProps) => {
   const { title, price, features, variant } = props;
   return (
     <Card className={`bg-${variant} min-h-[400px]`}>
