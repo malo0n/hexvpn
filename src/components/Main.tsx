@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "./ui/button";
 
 export const Main = () => {
   return (
@@ -19,7 +18,6 @@ export const Main = () => {
         <Image src={"/windowsIcon.svg"} width={43} height={43} className='h-auto' alt={"windows"} />
         <Image src={"/appleIcon.png"} width={37} height={45} className='h-auto' alt={"apple"} />
         <Image src={"/androidIcon.svg"} width={53} height={30} className='h-auto' alt={"android"} />
-        <Button variant={"outline"}>Узнать больше</Button>
       </div>
 
       <Image

@@ -13,7 +13,7 @@ export const Section = (props: Props) => {
         <p className='text-title-h2'>{title}</p>
         <p className='text-main-text' dangerouslySetInnerHTML={{ __html: subTitle }}></p>
       </div>
-      <div className='flex w-full items-end justify-between gap-[57px]'>{children}</div>
+      <div className='flex w-full items-end justify-around gap-[57px]'>{children}</div>
     </div>
   );
 };

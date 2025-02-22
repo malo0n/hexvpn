@@ -1,5 +1,5 @@
 interface Props {
-  variant: "primary" | "secondary";
+  variant: "accent" | "background";
   text: string;
 }
 
@@ -11,7 +11,7 @@ export const Mark = (props: Props) => {
         <g clipPath='url(#clip0_7_102)'>
           <path
             d='M3 9.72308L11.1385 17.8615L26 3'
-            stroke={variant === "primary" ? "#FF7061" : "#0E161E"}
+            stroke={variant === "accent" ? "#0E161E" : "#FF7061"}
             strokeWidth='5.66154'
           />
         </g>

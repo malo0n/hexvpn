@@ -1,4 +1,4 @@
-import { Noise } from "@/components/Noise";
+import { Noise } from "@/components/ui/Noise";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -13,12 +13,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <body className='antialiased'>
-        <Analytics />
-        <Noise></Noise>
-        {children}
-      </body>
-    </html>
+    <>
+      <html lang='en'>
+        <body className='antialiased'>
+          <Analytics />
+          <Noise></Noise>
+          {children}
+        </body>
+      </html>
+    </>
   );
 }
