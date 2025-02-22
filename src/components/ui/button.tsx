@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-background shadow-sm hover:bg-primary/90  ",
+        default: "bg-background text-primary shadow-sm hover:bg-primary/90 hover:text-background ",
         link: "text-primary underline-offset-4 hover:underline hover:translate-none hover:shadow-none ",
         accent: "text-primary bg-accent shadow-sm hover:bg-accent/90",
         outline: "text-primary border border-primary hover:text-background hover:bg-primary/90",

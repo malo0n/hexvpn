@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
-import { Mark } from "./ui/Mark";
+import { Mark } from "./ui/mark";
 
 export const basicPlan: Props = {
   title: "Базовый",

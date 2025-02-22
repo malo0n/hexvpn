@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HexAnimation from "./hexFigure";
 
 export const Main = () => {
   return (
@@ -20,14 +21,9 @@ export const Main = () => {
         <Image src={"/androidIcon.svg"} width={53} height={30} className='h-auto' alt={"android"} />
       </div>
 
-      <Image
-        src={"/hexFigure.svg"}
-        width={800}
-        height={720}
-        alt={"hexFigure"}
-        priority
-        className='absolute top-[120px] right-0 w-[45vw]'
-      ></Image>
+      <div className='absolute top-[120px] right-0'>
+        <HexAnimation></HexAnimation>
+      </div>
     </div>
   );
 };

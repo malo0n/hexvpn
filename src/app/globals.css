@@ -62,7 +62,8 @@
   --accent: #ff7061;
   --background: #e2e2e2;
   --foreground: hsl(240 10% 3.9%);
-  --card: var(--background) --card-foreground: hsl(240 10% 3.9%);
+  --card: var(--background);
+  --card-foreground: hsl(240 10% 3.9%);
   --popover: hsl(0 0% 100%);
   --popover-foreground: hsl(240 10% 3.9%);
   --primary-foreground: hsl(0 0% 98%);

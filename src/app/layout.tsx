@@ -1,4 +1,4 @@
-import { Noise } from "@/components/ui/Noise";
+import { Noise } from "@/components/ui/noise";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import "./globals.css";

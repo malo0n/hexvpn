@@ -1,11 +1,12 @@
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import HexAnimation2 from "@/components/hexFigure2";
 import { Main } from "@/components/Main";
 import { basicPlan, PlanCard, premiumPlan, trialPlan } from "@/components/PlanCard";
 import { Section } from "@/components/Section";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import Image from "next/image";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { servers } from "@/model/const";
 import Link from "next/link";
 
 export default function App() {
@@ -22,36 +23,37 @@ export default function App() {
           </Section>
 
           <Section id='servers' title='Серверы по всему миру' subTitle='Постоянно расширяем <br/> возможности'>
-            <Card className='w-full cursor-default bg-background p-[37px]! text-center text-subtitle2'>Турция</Card>
-            <Card className='w-full cursor-default bg-background p-[37px]! text-center text-subtitle2'>Нидерланды</Card>
-            <Card className='w-full cursor-default bg-background p-[37px]! text-center text-subtitle2'>Германия</Card>
+            {servers.map((server, index) => (
+              <Card key={index} className='w-full cursor-default bg-background p-[37px]! text-center text-subtitle2'>
+                {server}
+              </Card>
+            ))}
           </Section>
 
           <Section id='about' title='Полная безопасность' subTitle='Шифрование данных'>
-            <Card>
-              <div className='flex flex-col gap-7'>
-                <p className='text-subtitle1'>Протокол VLESS</p>
-                <p className='text-subtitle2'>
-                  Легковесный транспортный протокол, который обеспечивает безопасную связь между клиентом
-                  и&nbsp;сервером
-                </p>
-              </div>
+            <Card className='min-h-[214px] w-full'>
+              <CardHeader className='flex flex-col gap-7 pb-10'>
+                <CardTitle className='text-subtitle1'>Протокол VLESS</CardTitle>
+                <CardDescription>
+                  <p className='text-subtitle2'>
+                    Легковесный транспортный протокол, который обеспечивает безопасную связь между клиентом
+                    и&nbsp;сервером
+                  </p>
+                </CardDescription>
+              </CardHeader>
             </Card>
-            <Card className='h-[276px]! self-start'>
-              <div className='flex h-full flex-col gap-7'>
-                <p className='text-subtitle1'>Анонимность</p>
-                <p className='text-subtitle2'>Мы не сохраняем данные пользователей</p>
-              </div>
+            <Card className='min-h-[214px] w-full'>
+              <CardHeader className='flex flex-col gap-7 pb-10'>
+                <CardTitle className='text-subtitle1'>Анонимность</CardTitle>
+                <CardDescription>
+                  <p className='text-subtitle2'>Мы не сохраняем данные пользователей</p>
+                </CardDescription>
+              </CardHeader>
             </Card>
 
-            <Image
-              src={"/hexFigure2.svg"}
-              priority
-              width={800}
-              height={720}
-              alt={"hexFigure"}
-              className='absolute -top-[120px] -left-[114px] -z-10 w-[30vw]'
-            ></Image>
+            <div className='absolute -top-[120px] -left-[114px] -z-10 w-[30vw]'>
+              <HexAnimation2 />
+            </div>
           </Section>
 
           <Section id='bottom' title='Попробуйте бесплатно' subTitle='Неделя надежного VPN'>
