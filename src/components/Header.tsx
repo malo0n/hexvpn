@@ -10,13 +10,13 @@ export const Header = () => {
       </Link>
       <div className='flex gap-[32px] text-subtitle2'>
         <Button variant={"link"} size={"sm"}>
-          <a href='#subPlan'>Тарифы</a>
+          <Link href='/#subPlan'>Тарифы</Link>
         </Button>
         <Button variant={"link"} size={"sm"}>
-          <a href='#servers'>Серверы</a>
+          <Link href='/#servers'>Серверы</Link>
         </Button>
         <Button variant={"link"} size={"sm"}>
-          <a href='#about'>О нас</a>
+          <Link href='/#about'>О нас</Link>
         </Button>
       </div>
     </header>
