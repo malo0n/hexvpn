@@ -1,5 +1,3 @@
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
 import HexAnimation2 from "@/components/hexFigure2";
 import { Main } from "@/components/Main";
 import { basicPlan, PlanCard, premiumPlan, trialPlan } from "@/components/PlanCard";
@@ -12,7 +10,6 @@ import Link from "next/link";
 export default function App() {
   return (
     <div className='flex w-full flex-col'>
-      <Header />
       <div className='flex min-h-[100vh] flex-col gap-[205px]'>
         <Main />
         <div className='flex flex-col gap-[140px] py-[149px]'>
@@ -65,7 +62,6 @@ export default function App() {
           </Section>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

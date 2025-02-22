@@ -1,3 +1,5 @@
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 import { Noise } from "@/components/ui/noise";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
@@ -15,10 +17,12 @@ export default function RootLayout({
   return (
     <>
       <html lang='en'>
-        <body className='antialiased'>
+        <body className='min-h-[100dvh] antialiased'>
+          <Header />
           <Analytics />
           <Noise></Noise>
           {children}
+          <Footer />
         </body>
       </html>
     </>
