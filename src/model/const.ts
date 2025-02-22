@@ -194,7 +194,7 @@ export const basicPlan: PlanCardProps = {
   title: "Базовый",
   price: "от 56 руб/мес",
   features: ["Не более 3 устройств", "Скорость до 1 Гбит/с"],
-  variant: "background",
+  variant: "secondary",
 };
 
 export const trialPlan: PlanCardProps = {
@@ -208,5 +208,5 @@ export const premiumPlan: PlanCardProps = {
   title: "Премиум",
   price: "от 100 руб/мес",
   features: ["Не более 10 устройств", "Скорость до 10 Гбит/с", "Приоритетная работа техподдержки"],
-  variant: "background",
+  variant: "secondary",
 };

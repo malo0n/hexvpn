@@ -30,6 +30,7 @@ export default function HexAnimation() {
       <g clipPath='url(#clip0_50_6)'>
         {hexagons.map((hex, i) => (
           <motion.path
+            className={`transition-all duration-200 hover:scale-80 ${hex.stroke === "#FF7061" ? "cursor-pointer active:scale-70" : ""}`}
             key={i}
             d={hex.d}
             fill={hex.fill}
@@ -39,6 +40,7 @@ export default function HexAnimation() {
             variants={staggeredVariants}
             initial='hidden'
             animate={isInView ? "visible" : "hidden"}
+            onClick={hex.stroke === "#FF7061" ? () => (location.href = "https://t.me/vpnhex_bot") : undefined}
           />
         ))}
       </g>

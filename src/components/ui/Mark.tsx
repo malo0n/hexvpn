@@ -1,5 +1,5 @@
 interface Props {
-  variant: "accent" | "background";
+  variant: "accent" | "secondary";
   text: string;
 }
 

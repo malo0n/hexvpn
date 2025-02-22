@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HexAnimation from "./hexFigure";
+import HexAnimation from "./animations/hexFigure";
 
 export const Main = () => {
   return (

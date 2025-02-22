@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "./button";
 export const Footer = () => {
   const date = new Date();
   return (

@@ -7,7 +7,7 @@ export interface PlanCardProps {
   title: string;
   price: string;
   features: string[];
-  variant: "background" | "accent";
+  variant: "secondary" | "accent";
 }
 
 export const PlanCard = (props: PlanCardProps) => {
@@ -26,7 +26,7 @@ export const PlanCard = (props: PlanCardProps) => {
         </div>
       </CardContent>
       <CardFooter className='mt-auto flex justify-center'>
-        <Button variant={variant === "background" ? "outline" : "default"} asChild>
+        <Button variant={variant === "secondary" ? "outline" : "default"} asChild>
           <Link href={"https://t.me/vpnhex_bot"}>{variant === "accent" ? "Попробовать" : "Узнать больше"}</Link>
         </Button>
       </CardFooter>

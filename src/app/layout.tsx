@@ -1,5 +1,5 @@
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+import { Footer } from "@/components/ui/Footer";
+import { Header } from "@/components/ui/Header";
 import { Noise } from "@/components/ui/Noise";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";

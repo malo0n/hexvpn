@@ -58,9 +58,9 @@
 
 :root {
   --primary: #0e161e;
-  --secondary: #162431;
+  --secondary: #ededed;
   --accent: #ff7061;
-  --background: #e2e2e2;
+  --background: #f1f1f1;
   --foreground: hsl(240 10% 3.9%);
   --card: var(--background);
   --card-foreground: hsl(240 10% 3.9%);

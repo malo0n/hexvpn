@@ -1,4 +1,4 @@
-import HexAnimation2 from "@/components/hexFigure2";
+import HexAnimation2 from "@/components/animations/hexFigure2";
 import { Main } from "@/components/Main";
 import { PlanCard } from "@/components/PlanCard";
 import { Section } from "@/components/Section";
@@ -21,16 +21,19 @@ export default function App() {
 
           <Section id='servers' title='Серверы по всему миру' subTitle='Постоянно расширяем <br/> возможности'>
             {servers.map((server, index) => (
-              <Card key={index} className='w-full cursor-default bg-background p-[37px]! text-center text-subtitle2'>
+              <Card
+                key={index}
+                className='w-full cursor-default bg-background p-[37px]! text-center text-subtitle2 transition-all duration-400 hover:shadow-[0_7px_30px_-10px_#9F9FA9]'
+              >
                 {server}
               </Card>
             ))}
           </Section>
 
           <Section id='about' title='Полная безопасность' subTitle='Шифрование данных'>
-            <Card className='min-h-[214px] w-full'>
+            <Card className='z-10 min-h-[214px] w-full cursor-default transition-all duration-400 hover:shadow-[0_7px_30px_-10px_#9F9FA9]'>
               <CardHeader className='flex flex-col gap-7 pb-10'>
-                <CardTitle className='text-subtitle1'>Протокол VLESS</CardTitle>
+                <CardTitle className='text-subtitle2'>Протокол VLESS</CardTitle>
                 <CardDescription>
                   <p className='text-subtitle2'>
                     Легковесный транспортный протокол, который обеспечивает безопасную связь между клиентом
@@ -39,16 +42,16 @@ export default function App() {
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card className='min-h-[214px] w-full'>
+            <Card className='w-full cursor-default transition-all duration-400 hover:shadow-[0_7px_30px_-10px_#9F9FA9]'>
               <CardHeader className='flex flex-col gap-7 pb-10'>
-                <CardTitle className='text-subtitle1'>Анонимность</CardTitle>
+                <CardTitle className='text-subtitle2'>Анонимность</CardTitle>
                 <CardDescription>
                   <p className='text-subtitle2'>Мы не сохраняем данные пользователей</p>
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <div className='absolute -top-[120px] -left-[114px] -z-10 w-[30vw]'>
+            <div className='absolute -top-[120px] -left-[114px] z-0 w-[30vw]'>
               <HexAnimation2 />
             </div>
           </Section>
