@@ -13,7 +13,7 @@ export interface PlanCardProps {
 export const PlanCard = (props: PlanCardProps) => {
   const { title, price, features, variant } = props;
   return (
-    <Card className={`bg-${variant} min-h-[400px]`}>
+    <Card style={{ backgroundColor: `var(--${variant})` }} className={`min-h-[400px]`}>
       <CardHeader className='flex flex-col items-center'>
         <CardTitle className='text-center'>{title}</CardTitle>
         <CardDescription className='text-main-text'>{price}</CardDescription>
