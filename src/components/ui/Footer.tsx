@@ -15,8 +15,8 @@ export const Footer = () => {
             <Image src={"/telegramIcon.svg"} alt='telegram' width={24} height={24}></Image>
           </Link>
         </div>
-        <Button variant='link' className='h-fit p-0 lg:mt-6' asChild>
-          <Link href='/terms' className='transition-all hover:opacity-80'>
+        <Button variant='link' className='h-fit p-0! lg:mt-6' asChild>
+          <Link href='/terms' className='px-0 transition-all hover:opacity-80'>
             Пользовательское соглашение
           </Link>
         </Button>

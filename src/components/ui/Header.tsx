@@ -10,9 +10,9 @@ export const Header = () => {
   const deviceWidth = useDeviceWidth();
   const [openSideMenu, setOpenSideMenu] = useState(false);
 
-  if (!deviceWidth) {
-    return null;
-  }
+  // if (!deviceWidth) {
+  //   return null;
+  // }
 
   return (
     <header className='sticky top-0 z-50 flex h-[64px] items-center justify-between border-b-[1px] border-[#BABCBF] bg-background px-4 lg:h-[82px] lg:px-[64px]'>
