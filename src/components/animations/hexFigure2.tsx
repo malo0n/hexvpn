@@ -29,7 +29,7 @@ export default function HexAnimation2() {
     <motion.svg
       width='400'
       height='800'
-      className={"h-auto w-[60vw]"}
+      className={"h-auto w-[60vw] md:w-auto"}
       ref={ref}
       viewBox='0 0 474 904'
       fill='none'
