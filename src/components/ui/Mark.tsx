@@ -7,7 +7,14 @@ export const Mark = (props: Props) => {
   const { variant, text } = props;
   return (
     <div className='flex items-center gap-6'>
-      <svg width='29' height='22' viewBox='0 0 29 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
+      <svg
+        width='29'
+        height='22'
+        className='w-6 min-w-6'
+        viewBox='0 0 29 22'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+      >
         <g clipPath='url(#clip0_7_102)'>
           <path
             d='M3 9.72308L11.1385 17.8615L26 3'
@@ -21,7 +28,7 @@ export const Mark = (props: Props) => {
           </clipPath>
         </defs>
       </svg>
-      <p className='max-w-[193px] text-start text-main-text'>{text}</p>
+      <p className='text-start text-main-text'>{text}</p>
     </div>
   );
 };

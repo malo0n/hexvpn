@@ -1,10 +1,10 @@
 export default function Terms() {
   return (
-    <div className='mx-auto px-[114px] py-[60px]'>
-      <h1 className='mb-6 text-subtitle1 font-bold'>Пользовательское соглашение</h1>
+    <div className='mx-auto px-4 py-6 lg:px-[114px] lg:py-15'>
+      <h1 className='mb-6 text-subtitle2 font-bold'>Пользовательское соглашение</h1>
 
       <section className='mb-6'>
-        <h2 className='mb-4 text-subtitle2 font-semibold'>1. Термины и определения</h2>
+        <h2 className='mb-4 text-main-mobile font-semibold'>1. Термины и определения</h2>
         <p>
           <strong>1.1.</strong> Исполнитель – плательщик налога профессиональный налог Кортунов Дмитрий Вадимович.
         </p>
@@ -32,7 +32,7 @@ export default function Terms() {
       </section>
 
       <section className='mb-6'>
-        <h2 className='mb-4 text-subtitle2 font-semibold'>2. Предмет Пользовательского соглашения</h2>
+        <h2 className='mb-4 text-main-mobile font-semibold'>2. Предмет Пользовательского соглашения</h2>
         <p>
           <strong>2.1.</strong> Настоящее Пользовательское соглашение является публичной офертой в соответствии со ст.
           437 ГК РФ. Оплата Подписки является акцептом публичной оферты и подтверждает, что Пользователь полностью и
@@ -60,7 +60,7 @@ export default function Terms() {
       </section>
 
       <section className='mb-6'>
-        <h2 className='mb-4 text-subtitle2 font-semibold'>3. Порядок оказания услуг</h2>
+        <h2 className='mb-4 text-main-mobile font-semibold'>3. Порядок оказания услуг</h2>
         <p>
           <strong>3.1.</strong> Для получения услуг по Подписке Пользователь должен оплатить Подписку. После оплаты
           Подписки Пользователь автоматически получает доступ к Услугам по данным (логину и паролю в случае приобретения
@@ -87,7 +87,7 @@ export default function Terms() {
       </section>
 
       <section className='mb-6'>
-        <h2 className='mb-4 text-subtitle2 font-semibold'>4. Оплата подписки. Отказ от подписки</h2>
+        <h2 className='mb-4 text-main-mobile font-semibold'>4. Оплата подписки. Отказ от подписки</h2>
         <p>
           <strong>4.1.</strong> Стоимость услуг зависит от выбранного Пользователем тарифа:
         </p>
@@ -148,7 +148,7 @@ export default function Terms() {
       </section>
 
       <section className='mb-6'>
-        <h2 className='mb-4 text-subtitle2 font-semibold'>5. Права и обязанности Пользователя</h2>
+        <h2 className='mb-4 text-main-mobile font-semibold'>5. Права и обязанности Пользователя</h2>
         <p>
           <strong>5.1.</strong> Пользователь обязан:
         </p>
@@ -169,7 +169,7 @@ export default function Terms() {
       </section>
 
       <section className='mb-6'>
-        <h2 className='mb-4 text-subtitle2 font-semibold'>6. Права и обязанности Исполнителя</h2>
+        <h2 className='mb-4 text-main-mobile font-semibold'>6. Права и обязанности Исполнителя</h2>
         <p>
           <strong>6.1.</strong> Исполнитель обязуется предоставлять Пользователю по его запросу любую информацию,
           касающуюся Услуги и Подписки.
@@ -185,7 +185,7 @@ export default function Terms() {
       </section>
 
       <section className='mb-6'>
-        <h2 className='mb-4 text-subtitle2 font-semibold'>7. Интеллектуальная собственность</h2>
+        <h2 className='mb-4 text-main-mobile font-semibold'>7. Интеллектуальная собственность</h2>
         <p>
           <strong>7.1.</strong> Все материалы, доступ к которым получает Пользователь, являются объектами исключительных
           прав Исполнителя.
@@ -201,7 +201,7 @@ export default function Terms() {
       </section>
 
       <section className='mb-6'>
-        <h2 className='mb-4 text-subtitle2 font-semibold'>8. Ограничение ответственности</h2>
+        <h2 className='mb-4 text-main-mobile font-semibold'>8. Ограничение ответственности</h2>
         <p>
           <strong>8.1.</strong> Исполнитель не гарантирует, что услуги Сервиса и их качество будут соответствовать
           ожиданиям Пользователя.
@@ -216,7 +216,7 @@ export default function Terms() {
       </section>
 
       <section className='mb-6'>
-        <h2 className='mb-4 text-subtitle2 font-semibold'>9. Доступ к Сервису</h2>
+        <h2 className='mb-4 text-main-mobile font-semibold'>9. Доступ к Сервису</h2>
         <p>
           <strong>9.1.</strong> Исполнитель оставляет за собой право изменить или модифицировать Сервис в любой момент.
         </p>
@@ -226,7 +226,7 @@ export default function Terms() {
       </section>
 
       <section className='mb-6'>
-        <h2 className='mb-4 text-subtitle2 font-semibold'>10. Заключительные положения</h2>
+        <h2 className='mb-4 text-main-mobile font-semibold'>10. Заключительные положения</h2>
         <p>
           <strong>10.1.</strong> Настоящее Пользовательское соглашение регулируется законодательством Российской
           Федерации.
@@ -244,7 +244,7 @@ export default function Terms() {
       </section>
 
       <section className='mb-6'>
-        <h2 className='mb-4 text-subtitle2 font-semibold'>11. Реквизиты Исполнителя</h2>
+        <h2 className='mb-4 text-main-mobile font-semibold'>11. Реквизиты Исполнителя</h2>
         <p>КОРТУНОВ ДМИТРИЙ ВАДИМОВИЧ</p>
         <p>ИНН: 772096284118</p>
         <p>

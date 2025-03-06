@@ -26,7 +26,15 @@ export default function HexAnimation2() {
   const isInView = useInView(ref, { once: true, margin: "0px 0px -400px 0px" });
 
   return (
-    <motion.svg width='400' height='800' ref={ref} viewBox='0 0 474 904' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <motion.svg
+      width='400'
+      height='800'
+      className={"h-auto w-[60vw]"}
+      ref={ref}
+      viewBox='0 0 474 904'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
       <g clipPath='url(#clip0_50_33)'>
         {hexagons2.map((hex, i) => (
           <motion.path

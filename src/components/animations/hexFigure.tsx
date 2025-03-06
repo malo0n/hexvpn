@@ -14,7 +14,7 @@ const staggeredVariants = {
     opacity: 1,
     scale: 1,
     transition: {
-      delay: i * 0.05,
+      delay: i * 0.035,
       duration: 0.15,
       ease: [0.41, 1.02, 0.25, 0.25],
     },
@@ -26,7 +26,15 @@ export default function HexAnimation() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <motion.svg width='767' height='800' ref={ref} viewBox='0 0 767 915' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <motion.svg
+      width='767'
+      height='800'
+      ref={ref}
+      className={"h-fit w-[70vw] md:w-[50vw] lg:h-auto lg:w-[45vw]"}
+      viewBox='0 0 767 915'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
       <g clipPath='url(#clip0_50_6)'>
         {hexagons.map((hex, i) => (
           <motion.path

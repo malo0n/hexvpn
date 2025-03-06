@@ -10,9 +10,9 @@ import Link from "next/link";
 export default function App() {
   return (
     <div className='flex w-full flex-col'>
-      <div className='flex min-h-[100vh] flex-col gap-[205px]'>
+      <div className='flex min-h-[100vh] flex-col gap-6 md:gap-[205px]'>
         <Main />
-        <div className='flex flex-col gap-[140px] py-[149px]'>
+        <div className='flex flex-col gap-16 py-[149px] md:gap-20 lg:gap-[140px]'>
           <Section id='subPlan' title='Тарифы и планы' subTitle='Предоставляем доступные цены <br/> за наши услуги'>
             <PlanCard {...basicPlan} />
             <PlanCard {...trialPlan} />
@@ -31,27 +31,27 @@ export default function App() {
           </Section>
 
           <Section id='about' title='Полная безопасность' subTitle='Шифрование данных'>
-            <Card className='z-10 min-h-[214px] w-full cursor-default transition-all duration-400 hover:shadow-[0_7px_30px_-10px_#9F9FA9]'>
-              <CardHeader className='flex flex-col gap-7 pb-10'>
+            <Card className='z-10 w-full cursor-default transition-all duration-400 hover:shadow-[0_7px_30px_-10px_#9F9FA9] md:min-h-[214px]'>
+              <CardHeader className='flex flex-col gap-5 pb-10 lg:gap-7'>
                 <CardTitle className='text-subtitle2'>Протокол VLESS</CardTitle>
                 <CardDescription>
-                  <p className='text-subtitle2'>
+                  <p className='text-main-text lg:text-subtitle2'>
                     Легковесный транспортный протокол, который обеспечивает безопасную связь между клиентом
                     и&nbsp;сервером
                   </p>
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card className='w-full cursor-default transition-all duration-400 hover:shadow-[0_7px_30px_-10px_#9F9FA9]'>
-              <CardHeader className='flex flex-col gap-7 pb-10'>
+            <Card className='z-10 w-full cursor-default transition-all duration-400 hover:shadow-[0_7px_30px_-10px_#9F9FA9]'>
+              <CardHeader className='flex flex-col gap-5 pb-10 lg:gap-7'>
                 <CardTitle className='text-subtitle2'>Анонимность</CardTitle>
                 <CardDescription>
-                  <p className='text-subtitle2'>Мы не сохраняем данные пользователей</p>
+                  <p className='text-main-text lg:text-subtitle2'>Мы не сохраняем данные пользователей</p>
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <div className='absolute -top-[120px] -left-[114px] z-0 w-[30vw]'>
+            <div className='absolute -top-10 -left-[100px] -z-10 md:-top-[120px] md:-left-[114px] lg:z-0'>
               <HexAnimation2 />
             </div>
           </Section>
