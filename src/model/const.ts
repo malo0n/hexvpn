@@ -192,7 +192,7 @@ export const hexagons2 = [
 
 export const basicPlan: PlanCardProps = {
   title: "Базовый",
-  price: "от 56 руб/мес",
+  price: "от 84 руб/мес",
   features: ["Не более 3 устройств", "Скорость до 10 Гбит/с"],
   variant: "secondary",
 };
@@ -206,7 +206,7 @@ export const trialPlan: PlanCardProps = {
 
 export const premiumPlan: PlanCardProps = {
   title: "Премиум",
-  price: "от 100 руб/мес",
+  price: "от 199 руб/мес",
   features: ["Не более 10 устройств", "Скорость до 10 Гбит/с", "Приоритетная работа техподдержки"],
   variant: "secondary",
 };
